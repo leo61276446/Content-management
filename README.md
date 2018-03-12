@@ -19,7 +19,7 @@
 
 > $filename 为跟读题型的标准音频
 
-> audioformat支持的格式：wav(16k16bit), mp3, opus, amrnb, silk
+> audioformat支持的格式：mp3, opus, amrnb, silk
 
 > **参数顺序必须是先text再voice**
 
