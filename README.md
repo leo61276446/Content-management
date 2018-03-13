@@ -62,7 +62,7 @@ ID的值为内容管理服务器返回的内容ID，上面示例的评测文本�
 ```
 使用shell 下curl发送HTTP评测的命令是：
 ```
-curl -X post -H "appkey:$appkey" -F text='{"X-EngineType": "oral.gendu", "ID":"09b6009a-798b-4101-8be3-fab8414ad61c:1474273830473256006"}'  -F voice=@$filename -v http://edu.hivoice.cn:8085/eval/{audioformat}
+curl -X post -H "appkey:$appkey" -F text='{"X-EngineType": "oral.gendu", "ID":"09b6009a-798b-4101-8be3-fab8414ad61c:1474273830473256006"}' -F mode="A" -F voice=@$filename -v http://edu.hivoice.cn:8085/eval/{audioformat}
 
  audioformat支持的格式：mp3, opus, amrnb, silk，例如用户音频是mp3，评测地址是edu.hivoice.cn:8085/eval/mp3
 ```
